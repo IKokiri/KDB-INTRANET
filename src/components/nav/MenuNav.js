@@ -57,7 +57,16 @@ export const MenuNav = () =>{
                    <NavDropdown.Item href="#action/3.1">Plano de Comunicação Kuttner</NavDropdown.Item>
                    <NavDropdown.Item href="#action/3.1">PLANO RESUMIDO DE AÇÕES E METAS - KUTTNER - 2019-2020</NavDropdown.Item>
                  </NavDropdown>
-                 <Nav.Link href="#pricing">Utilidades</Nav.Link>
+                 <NavDropdown title="Utilidades" id="collasible-nav-dropdown">
+                   <NavDropdown.Item href="#action/3.1">Aniversariantes do Mês</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Links úteis</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Formulários</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Lista de ramais</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Lista Skype</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Lista de Celulares</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Troca Assinatura</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Lista de ramais - KNBS</NavDropdown.Item>
+                 </NavDropdown>
                </Nav>
              </Navbar.Collapse>
            </Navbar>
