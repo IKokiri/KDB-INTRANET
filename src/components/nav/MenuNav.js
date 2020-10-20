@@ -41,18 +41,23 @@ export const MenuNav = () =>{
                    <NavDropdown.Item href="#action/3.1">Brigada de Incêndio</NavDropdown.Item>
                    <NavDropdown.Item href="#action/3.1">CIPA</NavDropdown.Item>
                    <NavDropdown.Item href="#action/3.1">SIPAT</NavDropdown.Item>
-                   <NavDropdown.Divider />
-                   <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                  </NavDropdown>
-                 <Nav.Link href="#pricing">Para Mim</Nav.Link>
-                 <Nav.Link href="#pricing">Qualidade</Nav.Link>
+                 <NavDropdown title="Para Mim" id="collasible-nav-dropdown">
+                   <NavDropdown.Item href="#action/3.1">Banco Itaú</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">BrasilPrev</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Planos de Saúde e Convênios</NavDropdown.Item>
+                 </NavDropdown>
+                 <NavDropdown title="Qualidade" id="collasible-nav-dropdown">
+                   <NavDropdown.Item href="#action/3.1">Certificado ISO 9001:2015</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Norma ISO 9001:2015</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Normas Técnicas</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Objetivos da Qualidade</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Política da qualidade</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Procedimentos conforme Sistema da Qualidade</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">Plano de Comunicação Kuttner</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">PLANO RESUMIDO DE AÇÕES E METAS - KUTTNER - 2019-2020</NavDropdown.Item>
+                 </NavDropdown>
                  <Nav.Link href="#pricing">Utilidades</Nav.Link>
-               </Nav>
-               <Nav>
-                 <Nav.Link href="#deets">More deets</Nav.Link>
-                 <Nav.Link eventKey={2} href="#memes">
-                   Dank memes
-                 </Nav.Link>
                </Nav>
              </Navbar.Collapse>
            </Navbar>
