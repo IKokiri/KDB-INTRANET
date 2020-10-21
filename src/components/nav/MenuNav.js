@@ -1,6 +1,5 @@
 
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
@@ -55,7 +54,7 @@ export const MenuNav = () =>{
                    <NavDropdown.Item href="#action/3.1">Política da qualidade</NavDropdown.Item>
                    <NavDropdown.Item href="#action/3.1">Procedimentos conforme Sistema da Qualidade</NavDropdown.Item>
                    <NavDropdown.Item href="#action/3.1">Plano de Comunicação Kuttner</NavDropdown.Item>
-                   <NavDropdown.Item href="#action/3.1">PLANO RESUMIDO DE AÇÕES E METAS - KUTTNER - 2019-2020</NavDropdown.Item>
+                   <NavDropdown.Item href="#action/3.1">PLANO RESUMIDO DE AÇÕES E METAS</NavDropdown.Item>
                  </NavDropdown>
                  <NavDropdown title="Utilidades" id="collasible-nav-dropdown">
                    <NavDropdown.Item href="#action/3.1">Aniversariantes do Mês</NavDropdown.Item>
