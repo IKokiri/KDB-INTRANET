@@ -42,8 +42,7 @@ function App() {
       </div>
 
       </Router>
-      {/* <MenuNav></MenuNav>
-      <Panel></Panel> */}
+
     </div>
   );
 }
