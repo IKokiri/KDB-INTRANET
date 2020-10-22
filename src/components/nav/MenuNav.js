@@ -5,15 +5,28 @@ import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import logo from '../../kdb.png';
 
+import {Panel} from '../panel/Panel'
+import {Home} from '../home/Home'
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
 
 export const MenuNav = () =>{
 
     return(
         <>
+      
             {
+              
                <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-               <Navbar.Brand href="#home">
+               <Navbar.Brand>
+               <Link to="/">
                  <img
                    src={logo}
                    width="30"
@@ -21,14 +34,17 @@ export const MenuNav = () =>{
                    className="d-inline-block align-top"
                    alt="React Bootstrap logo"
                  />
+                 </Link>
                </Navbar.Brand>
              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
              <Navbar.Collapse id="responsive-navbar-nav">
                <Nav className="mr-auto">
-                 <Nav.Link href="#features">Home</Nav.Link>
-                 <Nav.Link href="#pricing">Notícias</Nav.Link>
+                 <Nav.Link>
+                   <Link to="/topics">Notícias</Link>
+                   </Nav.Link>
+                 
                  <NavDropdown title="Corporativo" id="collasible-nav-dropdown">
-                   <NavDropdown.Item href="#action/3.1">Catálogos</NavDropdown.Item>
+                   <NavDropdown.Item href="/topics">Catálogos</NavDropdown.Item>
                    <NavDropdown.Item href="#action/3.2">Centros de Custos</NavDropdown.Item>
                    <NavDropdown.Item href="#action/3.3">Código de Conduta</NavDropdown.Item>
                    <NavDropdown.Item href="#action/3.1">Comunicações internas</NavDropdown.Item>
@@ -69,8 +85,9 @@ export const MenuNav = () =>{
                </Nav>
              </Navbar.Collapse>
            </Navbar>
+           
             }
-            
+          
         </>
         
     )

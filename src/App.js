@@ -1,12 +1,19 @@
 import React from 'react';
 import './App.css';
 import {MenuNav} from './components/nav/MenuNav'
-import {Panel} from './components/panel/Panel'
 import firebase from './firebase'
+import {Panel} from './components/panel/Panel'
+import {Home} from './components/home/Home'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
 
 function App() {
-
-  
 
   React.useEffect(()=>{
     const msg=firebase.messaging();
@@ -14,14 +21,29 @@ function App() {
       return msg.getToken()
     }).then((data)=>{
         console.warn("token",data)
-        document.querySelector("#key").innerHTML = data;
     })
   })
   return (
     <div className="App">
-      <MenuNav></MenuNav>
-      <Panel></Panel>
-      <div id="key"></div>
+      <Router>
+        <MenuNav></MenuNav>
+
+        <div>
+       
+
+        <Switch>
+          <Route path="/topics">
+            <Panel />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+
+      </Router>
+      {/* <MenuNav></MenuNav>
+      <Panel></Panel> */}
     </div>
   );
 }
