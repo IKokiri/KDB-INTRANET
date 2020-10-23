@@ -5,8 +5,6 @@ import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import logo from '../../kdb.png';
 
-import {Panel} from '../panel/Panel'
-import {Home} from '../home/Home'
 
 import {
   BrowserRouter as Router,
@@ -40,7 +38,7 @@ export const MenuNav = () =>{
              <Navbar.Collapse id="responsive-navbar-nav">
                <Nav className="mr-auto">
                  <Nav.Link>
-                   <Link to="/topics">Notícias</Link>
+                   <Link to="/noticias">Notícias</Link>
                    </Nav.Link>
                  
                  <NavDropdown title="Corporativo" id="collasible-nav-dropdown">

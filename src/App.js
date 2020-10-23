@@ -3,6 +3,7 @@ import './App.css';
 import {MenuNav} from './components/nav/MenuNav'
 import firebase from './firebase'
 import {Panel} from './components/panel/Panel'
+import {Noticias} from './components/noticias/Noticias'
 import {Home} from './components/home/Home'
 import {
   BrowserRouter as Router,
@@ -28,12 +29,10 @@ function App() {
       <Router>
         <MenuNav></MenuNav>
 
-        <div>
-       
-
+      <div>
         <Switch>
-          <Route path="/topics">
-            <Panel />
+          <Route path="/noticias">
+            <Noticias />
           </Route>
           <Route path="/">
             <Home />
